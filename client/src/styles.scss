@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=DM+Sans:wght@400;500;700&family=Hind+Vadodara:wght@300;500&family=Lato:wght@400;700&family=Lexend+Deca:wght@400;500;600&family=Manrope:wght@600;700&family=Red+Hat+Text:wght@500&family=Roboto:wght@400;500&family=Sen:wght@400;700&family=Urbanist:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap');
+
+$s: sans-serif;
+$mainBg: #cde0fe;
+$l: 'Lato', sans-serif;
+$c: 'Cabin', sans-serif;
+$dm: 'DM Sans', sans-serif;
+$rh: 'Red Hat Text', sans-serif;
+$r: 'Roboto', sans-serif;
+$sen: 'Sen', sans-serif;
+$h: 'Hind Vadodara', sans-serif;
+$u: 'Urbanista', sans-serif;
+$lex: 'Lexend Deca', sans-serif;
+
+body {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    background: $mainBg;
+}
+
+@mixin flex($align, $justify, $direction: 'row', $wrap: 'wrap') {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin pos($t: 0, $l: 0, $b: 0, $r: 0, $pos: 'absolute') {
+    position: $pos;
+    top: $t;
+    left: $l;
+    bottom: $b;
+    right: $r;
+}
